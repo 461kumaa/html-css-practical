@@ -1,0 +1,207 @@
+/* PC、SP共通スタイル */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+body {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+  /* ヘッダー */
+header {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  font-size: 34px;
+}
+header div {
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+}
+header a {
+  text-decoration: none;
+  color: #000000;
+}
+header a:hover {
+  text-decoration: underline;  
+}
+#logo {
+  padding: 0 19px;
+  border: solid 1px #000000;
+  text-decoration: none;
+}
+/* ナビゲーション */
+#nav-pc > a {
+  margin-left: 18px;
+}
+
+/* FV画像 */
+#fv-photo {
+  width: 100%;
+}
+
+/* 見出しなど文字設定 */
+h2 {
+  font-size: 34px;
+}
+h3 {
+  font-size: 24px;
+}
+li,p {
+  font-size: 18px;
+}
+
+/* アバウト */
+#about {
+  margin-top: 72px;
+}
+#about > h2 {
+  text-align: center;
+}
+#about > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+#about-left {
+  text-align: right;
+  width: 50%;
+}
+#about-left > img {
+  margin-right: 120px;
+  border-radius: 50%;
+}
+#about-right {
+  text-align: left;
+  width: 50%;
+}
+
+/* ワークス */
+#works {
+  margin-top: 87px;
+}
+#works > h2 {
+  text-align: center;
+}
+#works > div {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+.works-photo,.works-explain {
+  margin: 0 8px;
+  width: 240px;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 18px;
+}
+}
+
+/* SP用スタイル */
+@media screen and (max-width: 767px) {
+body {
+  min-width: 375px;
+  margin: 0 auto;
+}
+
+  /* ヘッダー */
+header {
+  display: flex;
+  align-items: center;
+  height: 106px;
+  font-size: 28px;
+}
+header div {
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+}
+header a {
+  text-decoration: none;
+  color: #000000;
+}
+header a:hover {
+  text-decoration: underline;  
+}
+#logo {
+  padding: 0 19px;
+  border: solid 1px #000000;
+  text-decoration: none;
+}
+header nav {
+  font-size: 21px;
+}
+
+/* FV画像 */
+#fv-photo {
+  width: 100%;
+}
+
+/* 見出しなど文字設定 */
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 24px;
+}
+li,p {
+  font-size: 18px;
+}
+/* アバウト */
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 33px;
+}
+#about > h2 {
+  text-align: center;
+}
+#about-left {
+  text-align: center;
+  margin-top: 50px;
+}
+#about-left > img {
+  width: 280px;
+  border-radius: 50%;
+}
+#about-right > h3 {
+  margin: 0;
+}
+/* ワークス */
+#works {
+  text-align: center;
+  margin-top: 87px;
+}
+.works-photo {
+  margin-top: 44px;
+  width: 70%;
+}
+.works-explain {
+  margin: 0 auto;
+  width: 70%;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  margin-top: 42px;
+  font-size: 18px;
+}
+}
